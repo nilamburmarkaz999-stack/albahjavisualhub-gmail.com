@@ -1,0 +1,6 @@
+{
+  "name": "Thanafus AI",
+  "description": "Thanafus Art Fest 2026 voice-first conversational AI Assistant with real-time speech and multilingual support.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
