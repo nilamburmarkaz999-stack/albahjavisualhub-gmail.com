@@ -1,0 +1,47 @@
+{
+  "previewPort": 3000,
+  "healthPath": "/",
+  "startCommand": "docker compose -f docker-compose.base44.yml up -d",
+  "secrets": [
+    {
+      "name": "GEMINI_API_KEY",
+      "description": "Google Gemini API key for the conversational AI chat. Core feature.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "ELEVENLABS_API_KEY",
+      "description": "ElevenLabs API key for Malayalam/Arabic TTS.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "MALAYALAM_VOICE_ID",
+      "description": "ElevenLabs voice ID for Malayalam TTS.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "SUPABASE_URL",
+      "description": "Supabase project URL for auth.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "SUPABASE_PUBLISHABLE_KEY",
+      "description": "Supabase publishable/anon key for auth.",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "VITE_SUPABASE_URL",
+      "description": "Browser-exposed Supabase URL (same as SUPABASE_URL).",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "VITE_SUPABASE_PUBLISHABLE_KEY",
+      "description": "Browser-exposed Supabase publishable key (same as SUPABASE_PUBLISHABLE_KEY).",
+      "requiredAtBoot": false
+    },
+    {
+      "name": "FIRECRAWL_API_KEY",
+      "description": "Firecrawl API key for live web search.",
+      "requiredAtBoot": false
+    }
+  ]
+}
